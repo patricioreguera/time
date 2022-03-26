@@ -13,7 +13,6 @@ fetch("https://worldtimeapi.org/api/ip")
 .then(response => response.json())
 .then(data => {
 let resultado = data;
-  console.log( resultado);
   dy.textContent = data.day_of_year;
   dw.textContent = data.day_of_week;
   dr.textContent = 365 -(data.day_of_year);
