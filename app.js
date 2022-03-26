@@ -9,7 +9,6 @@ const saludo = document.getElementById ("saludo");
 
 
 
-
 fetch("https://worldtimeapi.org/api/ip")
 .then(response => response.json())
 .then(data => {
