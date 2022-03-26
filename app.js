@@ -5,7 +5,6 @@ const dr = document.getElementById ("dr");
 
 const bk = document.querySelector (".app");
 const saludo = document.getElementById ("saludo");
-const btn = document.getElementById ("btn");
 
 
 
@@ -19,18 +18,7 @@ let resultado = data;
   dy.textContent = data.day_of_year;
   dw.textContent = data.day_of_week;
   dr.textContent = 365 -(data.day_of_year);
- console.log(data);
 });
-
-
-/*
-url para copiar la estetica
-https://www.frontendmentor.io/challenges/clock-app-LMFaxFwrM
-info para data.
-//https://www.javascripture.com/Date
-
-*/
-
 
 let fecha = new Date ();
 let hora = fecha.getHours();
@@ -53,7 +41,7 @@ setInterval(myTimer, 1000);
 function myTimer() {
   const date = new Date();
   document.getElementById("hora").innerHTML = date.toLocaleTimeString();
-}
+};
 
 
 
@@ -69,26 +57,6 @@ function cambiarFondo () {
     saludo.textContent = "Buenas Noches";
 
   }
-}
+};
 
 cambiarFondo ();
-let valor = 1;
-
-
-btn.addEventListener ("click", 
-()=> {
-valor == 1 ? (
-  valor = 2 ,
-  btn.style.background = "red" 
-)
-: (
-  valor=1 ,
-  btn.style.background = "blue" 
-
-
-)
-
-console.log(valor);
- // bk.style.backgroundImage = 'url("./imagenes/background_night.jpg")';
-}
-);

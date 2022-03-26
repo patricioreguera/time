@@ -17,6 +17,7 @@ body {
 .time {
   font-family: "Bai Jamjuree", sans-serif;
   color: white;
+  text-align: center;
 
   font-size: 45px;
 }
