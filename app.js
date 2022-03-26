@@ -44,6 +44,7 @@ function myTimer() {
 };
 
 
+cambiarFondo ();
 
 function cambiarFondo () {
   
@@ -59,4 +60,3 @@ function cambiarFondo () {
   }
 };
 
-cambiarFondo ();
